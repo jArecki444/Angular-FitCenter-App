@@ -1,6 +1,10 @@
 mat-form-field {
     width: 300px;
   }
+  mat-card {
+    opacity: 0.9;
+    box-shadow: 0 3px 40px 44px rgba(0,0,0,0.3), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
+}
   
   button {
     margin-top: 20px;
@@ -12,6 +16,11 @@ mat-form-field {
     align-items: center;
     justify-content: center;
     height: 100vh;
+
+    background-image: url('../../../assets/background2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
   
   h2 {

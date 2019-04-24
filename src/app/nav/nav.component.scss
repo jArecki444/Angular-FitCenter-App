@@ -1,0 +1,56 @@
+.example-container {
+    margin-top: 64px;
+  }
+  .example-sidenav-content {
+    display: flex;
+    max-height: 90%;
+    align-items: center;
+    justify-content: center;
+  }
+  .example-sidenav {
+     user-select: none;
+  }
+  .full-width {
+    width: 245px;
+  }
+  .menu-button {
+    transition: 300ms ease-in-out;
+    transform: rotate(0deg);
+  }
+  .menu-button.rotated {
+    transform: rotate(180deg);
+  }
+  .submenu {
+    overflow-y: hidden;
+    transition: transform 300ms ease;
+    transform: scaleY(0);
+    transform-origin: top;
+    padding-left: 30px;
+    max-height: 0px;
+  }
+  .submenu.expanded {
+    transform: scaleY(1);
+    max-height: 160px;
+    transition: transform 300ms ease;
+    /* width: 240px; */
+
+  }
+#sidenav .avatar {
+    background-image: url('http://i.pravatar.cc/300');
+    background-size: cover;
+}
+.mat-card {
+    max-height: 40px;
+    background: #7e7e7e12;
+}
+i{
+  margin-left: 83vw;
+}
+.logout{
+  display: inline-flex;
+  align-items: center;
+}
+.mat-drawer{
+    height: 100%;
+    overflow: hidden !important;
+}

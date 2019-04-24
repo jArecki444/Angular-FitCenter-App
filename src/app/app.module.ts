@@ -10,25 +10,34 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule} from '@angular/flex-layout';
+import { ToastrModule } from 'ngx-toastr';
+import { CenterComponent } from './center/center.component';
+import { NavComponent } from './nav/nav.component';
+
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    LoginComponent,
-    RegisterComponent
-  ],
-  imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-    MaterialModule,
-    AppRoutingModule,
-    ReactiveFormsModule,
-    HttpClientModule,
-    FormsModule,
-    MaterialModule,
-    FlexLayoutModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+   declarations: [
+      AppComponent,
+      LoginComponent,
+      RegisterComponent,
+      CenterComponent,
+      NavComponent
+   ],
+   imports: [
+      BrowserModule,
+      BrowserAnimationsModule,
+      MaterialModule,
+      AppRoutingModule,
+      ReactiveFormsModule,
+      HttpClientModule,
+      FormsModule,
+      MaterialModule,
+      FlexLayoutModule,
+      ToastrModule.forRoot()
+   ],
+   providers: [],
+   bootstrap: [
+      AppComponent
+   ]
 })
 export class AppModule { }

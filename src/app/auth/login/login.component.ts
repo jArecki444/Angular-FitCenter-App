@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-// import { AlertifyService } from 'src/app/_services/alertify.service';
 import { Router } from '@angular/router';
 import { AuthService } from '../auth.service';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-login',
@@ -13,7 +13,7 @@ export class LoginComponent implements OnInit {
 
   constructor(
     public authService: AuthService,
-    // private alertify: AlertifyService,
+    private toastr: ToastrService,
     private router: Router
   ) {}
 
@@ -22,12 +22,12 @@ export class LoginComponent implements OnInit {
   login() {
     this.authService.login(this.model).subscribe(
       next => {
-        // this.alertify.success('Zalogowano pomyślnie');
+        this.toastr.success('Zalogowano pomyślnie');
       },
       error => {
-        // this.alertify.error(error);
+        this.toastr.error('Nie udało się zalogować');
       }, () => {
-        this.router.navigate(['/centre']);
+        this.router.navigate(['/center']);
       }
     );
   }

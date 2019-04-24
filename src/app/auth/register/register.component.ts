@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AuthService } from '../auth.service';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-register',
@@ -12,6 +13,7 @@ export class RegisterComponent implements OnInit {
 
   constructor(
     private authService: AuthService,
+    private toastr: ToastrService,
     private router: Router
   ) {}
 
@@ -20,10 +22,10 @@ export class RegisterComponent implements OnInit {
   register() {
     this.authService.register(this.model).subscribe(
       () => {
-        // this.alertify.success('Konto zostało utworzone!');
+        this.toastr.success('Konto zostało utworzone!');
       },
       error => {
-        // this.alertify.error(error);
+        this.toastr.success('Nie można stworzyć konta!');
       },
       () => {
         this.router.navigate(['/auth/login']);

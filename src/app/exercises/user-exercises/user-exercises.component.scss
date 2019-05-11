@@ -1,0 +1,24 @@
+.example-card {
+  max-width: 15vw;
+  top: 9vh;
+  right: 10vw;
+  margin: 3vh;
+  }
+  
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h2 {
+    font-size: 30px;
+    font-family: sans-serif;
+    color: #3f51b5;
+    max-height: 53px;
+    margin-left: 5vh;
+  }

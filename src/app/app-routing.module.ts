@@ -4,6 +4,7 @@ import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { CenterComponent } from './center/center.component';
 import { AuthGuard } from './_guards/auth.guard';
+import { UserExercisesComponent } from './exercises/user-exercises/user-exercises.component';
 
 const routes: Routes = [
 
@@ -15,10 +16,11 @@ const routes: Routes = [
     canActivate: [AuthGuard],
     children: [
       {path: 'center', component: CenterComponent},
+      {path: 'exercises/user-exercises', component: UserExercisesComponent},
     ]
   },
   {
-    path: '**', redirectTo: '', pathMatch: 'full'
+    path: '**', redirectTo: 'center', pathMatch: 'full'
   }
 ];
 

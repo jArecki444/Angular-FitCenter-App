@@ -13,6 +13,7 @@ import { FlexLayoutModule} from '@angular/flex-layout';
 import { ToastrModule } from 'ngx-toastr';
 import { CenterComponent } from './center/center.component';
 import { NavComponent } from './nav/nav.component';
+import { UserExercisesComponent } from './exercises/user-exercises/user-exercises.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { NavComponent } from './nav/nav.component';
       LoginComponent,
       RegisterComponent,
       CenterComponent,
-      NavComponent
+      NavComponent,
+      UserExercisesComponent
    ],
    imports: [
       BrowserModule,

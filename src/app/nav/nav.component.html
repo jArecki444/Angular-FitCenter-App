@@ -52,7 +52,7 @@
           [ngClass]="{ expanded: showTrainingSubmenu }"
           *ngIf="isShowing || isExpanded"
         >
-          <a mat-list-item href="..."
+          <a mat-list-item [routerLink]="['/exercises/user-exercises']" routerLinkActive="router-link-active" 
             ><mat-icon>directions_bike</mat-icon>Twoje ćwiczenia</a
           >
           <a mat-list-item href="..."

@@ -43,7 +43,7 @@
           >Pole nie może być puste.</mat-error
         >
       </mat-form-field>
-      <mat-form-field hintLabel="Hasło powinno zawierać przynajniej 4 znaki.">
+      <mat-form-field hintLabel="Hasło powinno zawierać przynajniej 8 znaków.">
         <input
           type="password"
           matInput
@@ -55,7 +55,7 @@
           #pwInput="ngModel"
         />
         <mat-hint align="end"> {{ pwInput.value?.length }} </mat-hint>
-        <mat-error>Podane hasło zawiera mniej niż 4 znaki!</mat-error>
+        <mat-error>Podane hasło zawiera mniej niż 8 znaków!</mat-error>
       </mat-form-field>
       <button
         type="submit"

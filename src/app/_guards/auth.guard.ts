@@ -17,7 +17,7 @@ export class AuthGuard implements CanActivate {
     if (this.authService.loggedIn()) {
       return true;
     }
-    this.toastr.error('Nie masz uprawnień do wyświetlania tej strony!');
+    this.toastr.info('Aby przejść dalej musisz się zalogować!');
     this.router.navigate(['auth/login']);
     return false;
   }

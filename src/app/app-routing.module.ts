@@ -5,6 +5,7 @@ import { RegisterComponent } from './auth/register/register.component';
 import { CenterComponent } from './center/center.component';
 import { AuthGuard } from './_guards/auth.guard';
 import { UserExercisesComponent } from './exercises/user-exercises/user-exercises.component';
+import { UserMealsComponent } from './meals/user-meals/user-meals.component';
 
 const routes: Routes = [
 
@@ -17,6 +18,7 @@ const routes: Routes = [
     children: [
       {path: 'center', component: CenterComponent},
       {path: 'exercises/user-exercises', component: UserExercisesComponent},
+      {path: 'meals/user-meals', component: UserMealsComponent},
     ]
   },
   {

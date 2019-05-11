@@ -1,0 +1,45 @@
+.flex-container {
+	display: flex;
+	justify-content: center;
+	padding: 0;
+	margin-left: -10px;
+	margin-right: -10px;
+}
+.flex-container mat-card {
+	flex: 1;
+	margin: 10px;
+	padding: 20px 40px 10px 40px;
+	font-size: 18px;
+}
+.flex2{
+	display: flex;
+	justify-content: center;
+	padding: 0;
+	margin-left: -10px;
+	margin-right: -10px;
+}
+.flex2  mat-card{
+	flex: 1;
+	margin: 10px;
+	padding: 20px 40px 10px 40px;
+	font-size: 18px;
+}
+.actions{
+	display: flex;
+	justify-content: center;
+	padding: 0;
+	margin: 10px;
+
+}
+.actions mat-raised-button{
+	justify-content: center;
+	padding: 0;
+
+}
+.amount {
+	text-align: right;
+	font-size: 14px;
+}
+.actionbtn{
+	margin: 10px;
+}
